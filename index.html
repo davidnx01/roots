@@ -1,0 +1,369 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Roots Vegan Food · vegánske obedy na Mierovom námestí, Trenčín — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh webu pre Roots Vegan Food, Mierové námestie 11, Trenčín. Ukážka od webdavid.sk.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Antonio:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --air:#EDF2EA; --air-2:#DFE8DC; --ink:#10291F; --ink-2:#3D5A4C; --leaf:#006042; --leaf-hi:#0B7652;
+  --soil:#0C3A2A; --deep:#072619; --root:#9FCDB3; --mint:#E3EEE6; --tomato:#F4AE3D;
+  --serif:Castoro, "Iowan Old Style", Georgia, serif;
+  --cond:Antonio, "Arial Narrow", "Roboto Condensed", sans-serif;
+  --gut:180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--air);color:var(--ink);font:400 18px/1.6 var(--serif);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--tomato);outline-offset:3px}
+.wrap{width:min(1200px,100% - 80px);margin-inline:auto}
+.lbl{font:600 14px/1.2 var(--cond);letter-spacing:.14em;text-transform:uppercase}
+.num{font-variant-numeric:tabular-nums lining-nums}
+
+.demo{background:var(--leaf);color:var(--mint);font:400 15px/1.4 var(--cond);letter-spacing:.04em;text-align:center;padding:9px 16px}
+.demo b{font-weight:700}
+
+/* above ground */
+.top{display:flex;align-items:center;gap:30px;padding:16px 0}
+.logo{display:block;margin-right:auto;width:68px;height:68px}
+.logo img{width:68px;height:68px}
+.top nav{display:flex;gap:26px}
+.top nav a{font:600 15px/1 var(--cond);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:14px 0;background:linear-gradient(var(--leaf),var(--leaf)) 0 calc(100% - 9px)/0 1.5px no-repeat;transition:background-size .2s}
+.top nav a:hover{background-size:100% 1.5px}
+.call{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:23px;background:var(--leaf);color:var(--air);text-decoration:none;font:600 16px/1 var(--cond);letter-spacing:.06em;transition:background .2s}
+.call:hover{background:var(--leaf-hi)}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;padding-top:34px}
+.hero-txt{padding-bottom:52px}
+.hero .lbl{color:var(--leaf);margin:0}
+h1{margin:16px 0 0;font:400 clamp(40px,4.7vw,62px)/1.04 var(--serif);letter-spacing:-.015em;max-width:12em}
+h1 em{color:var(--leaf)}
+.quote{margin:24px 0 0;padding:0;font:italic 400 22px/1.4 var(--serif);color:var(--ink-2)}
+.quote cite{display:block;margin-top:4px;font:600 13px/1.3 var(--cond);font-style:normal;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:24px;text-decoration:none;font:600 16px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase;transition:background .2s,color .2s}
+.btn-leaf{background:var(--leaf);color:var(--air)}
+.btn-leaf:hover{background:var(--leaf-hi)}
+.btn-line{box-shadow:inset 0 0 0 1.5px var(--leaf);color:var(--leaf)}
+.btn-line:hover{background:var(--air-2)}
+.facts{display:flex;gap:34px;margin:34px 0 0;padding:0;list-style:none}
+.facts b{display:block;font:600 34px/1 var(--cond);color:var(--leaf)}
+.facts span{display:block;margin-top:6px;font:400 14px/1.3 var(--cond);letter-spacing:.06em;color:var(--ink-2)}
+
+.sprouts{display:flex;align-items:flex-end;justify-content:flex-end;gap:14px;margin:0}
+.sprouts figure{margin:0;overflow:hidden}
+.sprouts img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.sprouts figure:hover img{transform:scale(1.045)}
+.sp-1{width:46%;height:clamp(300px,33vw,430px);border-radius:999px 999px 0 0}
+.sp-2{width:28%;height:clamp(200px,22vw,290px);border-radius:999px 999px 0 0}
+.sp-3{width:26%;height:clamp(150px,15vw,200px);border-radius:999px 999px 0 0}
+
+/* ground line + below ground */
+.soil{background:var(--soil);color:var(--mint);position:relative}
+.ground{position:relative;height:0}
+.bowl{position:absolute;left:-10px;top:-3px;width:170px;height:72px;overflow:visible}
+.bowl path{fill:none;stroke:var(--root);stroke-width:5;stroke-linecap:round}
+.lvl{display:grid;grid-template-columns:var(--gut) 1fr;position:relative}
+.rt{position:relative;overflow:hidden}
+.rt svg{position:absolute;left:0;top:0;width:180px;height:2400px}
+.rt path{fill:none;stroke:var(--root);stroke-linecap:round;vector-effect:non-scaling-stroke}
+.rt .tr{stroke-width:2.4;opacity:.9}
+.rt .br{stroke-width:1.5;opacity:.65}
+.rt .tip{stroke-width:1.2;opacity:.4}
+.body{padding:60px 0 84px}
+.lvl h2{position:relative;margin:0;font:400 clamp(32px,3.6vw,48px)/1.1 var(--serif);letter-spacing:-.01em;max-width:18em}
+.lvl h2::before{content:"";position:absolute;left:-17px;top:.55em;width:9px;height:9px;border-radius:50%;background:var(--tomato)}
+.lvl .lbl{color:var(--root);margin:0 0 14px}
+.note{font:400 15px/1.5 var(--cond);letter-spacing:.03em;color:rgba(227,238,230,.72)}
+
+/* menu tree */
+.days{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:40px}
+.day h3{margin:0 0 8px;font:700 20px/1.2 var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--tomato)}
+.day h3 small{display:block;margin-top:3px;font:400 14px/1.3 var(--cond);letter-spacing:.06em;text-transform:none;color:rgba(227,238,230,.7)}
+.tree{list-style:none;margin:0;padding:0}
+.tree li{position:relative;padding:10px 0 12px 32px}
+.tree li::before{content:"";position:absolute;left:0;top:0;width:22px;height:25px;border-left:1.5px solid rgba(159,205,179,.7);border-bottom:1.5px solid rgba(159,205,179,.7);border-bottom-left-radius:18px}
+.tree li:not(:last-child)::after{content:"";position:absolute;left:0;top:24px;bottom:0;border-left:1.5px solid rgba(159,205,179,.7)}
+.tree .k{display:block;font:600 13px/1.2 var(--cond);letter-spacing:.12em;text-transform:uppercase;color:var(--root)}
+.tree .d{display:block;margin-top:4px;font-size:19px;line-height:1.35}
+.tree .m{display:flex;justify-content:space-between;gap:12px;margin-top:4px;font:400 15px/1.3 var(--cond);letter-spacing:.03em;color:rgba(227,238,230,.72)}
+.tree .p{font:600 22px/1 var(--cond);color:var(--tomato);white-space:nowrap}
+.more{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;padding-top:22px;border-top:1px solid rgba(159,205,179,.3)}
+.more a{font:600 16px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--tomato);padding:12px 0;border-bottom:1.5px solid rgba(244,174,61,.5)}
+.more a:hover{border-color:var(--tomato)}
+.more .note{margin:0;flex:1;min-width:260px}
+
+/* stálica */
+.stay{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;margin-top:40px;align-items:start}
+.list{margin:0;padding:0;list-style:none}
+.list li{display:grid;grid-template-columns:1fr auto;gap:2px 18px;padding:16px 0;border-bottom:1px solid rgba(159,205,179,.22)}
+.list li:first-child{border-top:1px solid rgba(159,205,179,.22)}
+.list .d{font-size:21px;line-height:1.3}
+.list .p{font:600 22px/1.2 var(--cond);color:var(--tomato);text-align:right}
+.list .s{grid-column:1/-1;font:400 15px/1.45 var(--cond);letter-spacing:.03em;color:rgba(227,238,230,.7)}
+.list h3{grid-column:1/-1;margin:0;font:700 15px/1.2 var(--cond);letter-spacing:.14em;text-transform:uppercase;color:var(--root)}
+.list li.h{border-bottom:0;padding:28px 0 4px}
+.stay figure{margin:0}
+.stay figure div{overflow:hidden;border-radius:0 0 999px 999px}
+.stay figure img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.stay figure:hover img{transform:scale(1.045)}
+.stay figcaption{margin-top:10px}
+
+/* unique */
+.tips{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin:40px 0 0;padding:0;list-style:none}
+.tips li{position:relative;padding-top:22px;border-top:1.5px solid rgba(159,205,179,.45)}
+.tips li::before{content:"";position:absolute;left:0;top:-5px;width:9px;height:9px;border-radius:50%;background:var(--root)}
+.tips b{display:block;font:400 26px/1.2 var(--serif)}
+.tips span{display:block;margin-top:8px;font:400 16px/1.5 var(--cond);letter-spacing:.02em;color:rgba(227,238,230,.76)}
+
+/* contact */
+.deep{background:var(--deep)}
+.cg{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:40px;margin-top:40px}
+.cg .lbl{display:block;margin-bottom:10px}
+.big{display:inline-block;font:400 clamp(24px,2.3vw,30px)/1.25 var(--serif);text-decoration:none}
+a.big:hover{color:var(--tomato)}
+.cg p{margin:10px 0 0;font:400 16px/1.5 var(--cond);letter-spacing:.02em;color:rgba(227,238,230,.75)}
+.links{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin-top:14px}
+.links a{font:600 15px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--tomato);padding:11px 0}
+.links a:hover{text-decoration:underline;text-underline-offset:4px}
+.hours{width:100%;border-collapse:collapse;font:400 18px/1.3 var(--cond);letter-spacing:.03em}
+.hours td{padding:7px 0;border-bottom:1px solid rgba(159,205,179,.16)}
+.hours td+td{text-align:right}
+.hours tr[data-today] td{color:var(--tomato)}
+.hours tr[data-today] td:first-child::after{content:" · dnes";font-size:14px}
+.rating{display:flex;gap:40px;flex-wrap:wrap;margin-top:44px;padding-top:22px;border-top:1px solid rgba(159,205,179,.3)}
+.rating b{font:600 38px/1 var(--cond);color:var(--mint)}
+.rating span{margin-left:10px;font:400 15px/1.3 var(--cond);letter-spacing:.04em;color:rgba(227,238,230,.72)}
+
+footer{background:var(--deep);color:rgba(227,238,230,.7);font:400 15px/1.5 var(--cond);letter-spacing:.04em;padding:0 0 34px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(159,205,179,.2);padding-top:26px}
+footer b{color:var(--root);font-weight:600}
+
+.bar{display:none}
+
+@media (max-width:980px){
+  :root{--gut:110px}
+  .hero{grid-template-columns:1fr;gap:6px}
+  .hero-txt{padding-bottom:18px}
+  .sprouts{justify-content:flex-start}
+  .days{grid-template-columns:1fr 1fr}
+  .stay{grid-template-columns:1fr}
+  .stay figure{max-width:380px}
+  .tips{grid-template-columns:1fr}
+  .cg{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  :root{--gut:30px}
+  .wrap{width:calc(100% - 36px)}
+  body{font-size:17px;padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+  .top nav{display:none}
+  .top{padding:10px 0}
+  .logo,.logo img{width:56px;height:56px}
+  .call{min-height:44px;padding:0 16px;font-size:15px}
+  .hero{padding-top:18px}
+  .quote{font-size:19px}
+  .facts{gap:20px}
+  .facts b{font-size:28px}
+  .facts span{font-size:13px}
+  .sprouts{gap:8px}
+  .sp-1{height:230px}.sp-2{height:170px}.sp-3{height:120px}
+  .bowl{width:70px;height:30px;left:-22px}
+  .rt svg{display:none}
+  .rt::before{content:"";position:absolute;left:12px;top:0;bottom:0;border-left:2px solid rgba(159,205,179,.55)}
+  .body{padding:44px 0 60px}
+  .lvl h2::before{left:-23px}
+  .days{grid-template-columns:1fr;gap:26px}
+  .cg{grid-template-columns:1fr;gap:28px}
+  .rating{gap:14px;flex-direction:column}
+  .bar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--deep);padding:8px 10px calc(8px + env(safe-area-inset-bottom));box-shadow:0 -1px 0 rgba(159,205,179,.25)}
+  .bar a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:24px;text-decoration:none;font:600 16px/1 var(--cond);letter-spacing:.12em;text-transform:uppercase}
+  .bar a:first-child{background:var(--tomato);color:var(--deep)}
+  .bar a:last-child{box-shadow:inset 0 0 0 1.5px var(--root);color:var(--mint)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="demo" role="note"><b>Neoficiálny návrh — nie je to oficiálny web podniku</b> · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header>
+  <div class="wrap top">
+    <a class="logo" href="#" aria-label="Roots Vegan Food — úvod"><img src="assets/logo.webp" width="240" height="240" alt="Logo Roots Vegan Food: miska s koreňmi"></a>
+    <nav aria-label="Hlavná navigácia">
+      <a href="#menu">Menu týždňa</a>
+      <a href="#ponuka">Stála ponuka</a>
+      <a href="#poschodie">Na poschodí</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="call num" href="tel:+421918238718">0918 238 718</a>
+  </div>
+</header>
+
+<main>
+  <section aria-labelledby="h1">
+    <div class="wrap hero">
+      <div class="hero-txt">
+        <p class="lbl">Vegánska reštaurácia · Trenčín</p>
+        <h1 id="h1">Vegánske obedy <em>na&nbsp;poschodí</em> nad Mierovým námestím</h1>
+        <blockquote class="quote">„To čo si práve dnes zaslúžiš...Roots“<cite>ich popis na Wolte</cite></blockquote>
+        <div class="cta">
+          <a class="btn btn-leaf" href="#menu">Menu tohto týždňa</a>
+          <a class="btn btn-line" href="tel:+421918238718">Zavolať</a>
+        </div>
+        <ul class="facts">
+          <li><b class="num">4,7</b><span>Google · 131 hodnotení</span></li>
+          <li><b class="num">96 %</b><span>odporúča · FB 51</span></li>
+          <li><b class="num">Po–Pi</b><span>obedy od 11:00</span></li>
+        </ul>
+      </div>
+      <div class="sprouts">
+        <figure class="sp-1"><img src="assets/hero.webp" width="900" height="1200" fetchpriority="high" alt="Pečivo s plátkami žltých a oranžových paradajok a tymianom na tmavom tanieri"></figure>
+        <figure class="sp-2"><img src="assets/paradajky.webp" width="640" height="853" alt="Zelené, žlté a oranžové paradajky na drevenej doske"></figure>
+        <figure class="sp-3"><img src="assets/kolac.webp" width="640" height="605" alt="Tmavá torta krájaná na dieliky, zdobená červenými ríbezľami a mätou"></figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="soil">
+    <div class="wrap ground" aria-hidden="true">
+      <svg class="bowl" viewBox="0 0 170 72"><path d="M4 5.5H166"/><path d="M16 6C16 44 46 66 85 66S154 44 154 6"/></svg>
+    </div>
+
+    <section class="wrap lvl" id="menu" aria-labelledby="h-menu">
+      <div class="rt" aria-hidden="true"><svg viewBox="0 0 180 2400"><path class="tr" d="M75 66C78 150 60 230 66 330S86 470 74 540V2400"/><path class="br" d="M74 84C96 112 130 120 166 120"/><path class="br" d="M76 70C60 92 40 100 28 128"/><path class="tip" d="M78 72C96 84 106 104 110 126"/><path class="br" d="M68 300C48 330 30 344 16 392"/><path class="tip" d="M44 336C40 360 46 378 38 398"/><path class="br" d="M74 620C104 650 118 700 114 760"/><path class="tip" d="M110 720C128 736 136 750 140 776"/><path class="br" d="M74 900C50 930 36 960 24 1010"/><path class="br" d="M74 1180C100 1220 108 1260 124 1300"/></svg></div>
+      <div class="body">
+        <p class="lbl">Týždenné menu · 28. 9. – 2. 10. 2026</p>
+        <h2 id="h-menu">V pondelok tekvica s&nbsp;tempehom, v&nbsp;utorok plnené kapustové listy</h2>
+        <div class="days">
+          <div class="day">
+            <h3>Pondelok<small>28. 9.</small></h3>
+            <ul class="tree">
+              <li><span class="k">Polievka</span><span class="d">Turecká polievka z červenej šošovice</span></li>
+              <li><span class="k">Hlavné jedlo</span><span class="d">Špagety v omáčke z pečenej tekvice s restovaným tempehom</span><span class="m"><span>350&nbsp;g · alergény 1, 6</span><span class="p num">9,40&nbsp;€</span></span></li>
+            </ul>
+          </div>
+          <div class="day">
+            <h3>Utorok<small>29. 9.</small></h3>
+            <ul class="tree">
+              <li><span class="k">Polievka</span><span class="d">Petržlenový krém s krutónmi</span><span class="m"><span>alergény 1</span></span></li>
+              <li><span class="k">Hlavné jedlo</span><span class="d">Plnené kapustové listy v rajčinovej omáčke, varené zemiaky…</span></li>
+            </ul>
+          </div>
+          <div class="day">
+            <h3>K dennému menu<small>na Wolte v pondelok 28. 9.</small></h3>
+            <ul class="tree">
+              <li><span class="d">Domáce pikantné kimchi</span><span class="m"><span>300&nbsp;g · čínska kapusta, biela reďkovka, mrkva, jarná cibuľka</span><span class="p num">8,50&nbsp;€</span></span></li>
+              <li><span class="d">Banánový chlebík s kúskami bio zázvorovej čokolády</span><span class="m"><span>alergény 1</span><span class="p num">3,20&nbsp;€</span></span></li>
+              <li><span class="d">Bezlepkový slivkovo-škoricový chia puding</span><span class="m"><span>alergény 6</span><span class="p num">4,60&nbsp;€</span></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="more">
+          <a href="https://www.facebook.com/rootsveganfoodtrencin" rel="noopener" target="_blank">Streda až piatok na Facebooku →</a>
+          <p class="note">Menu podľa ich príspevku na FB z 28. 9. 2026 („Nový týždeň bude u nás vyzerať takto…“). Ceny podľa ponuky na Wolt/bistro.sk, v reštaurácii sa môžu líšiť.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap lvl" id="ponuka" aria-labelledby="h-ponuka">
+      <div class="rt" aria-hidden="true"><svg viewBox="0 0 180 2400"><path class="tr" d="M74 0C70 110 86 210 76 320S66 470 74 540V2400"/><path class="br" d="M76 70C98 108 132 120 166 120"/><path class="br" d="M80 400C108 432 116 480 110 540"/><path class="tip" d="M98 450C120 456 132 470 140 494"/><path class="br" d="M74 760C50 790 34 820 26 872"/><path class="br" d="M74 1000C102 1040 110 1080 128 1120"/></svg></div>
+      <div class="body">
+        <p class="lbl">Stála ponuka</p>
+        <h2 id="h-ponuka">Tempeh burrito, kimchi smažená ryža a&nbsp;ľadové black sesame latte</h2>
+        <div class="stay">
+          <ul class="list">
+            <li class="h"><h3>Hlavné jedlá</h3></li>
+            <li><span class="d">Tempeh burrito</span><span class="p num">12,50&nbsp;€</span><span class="s">250&nbsp;g · pšeničná tortilla, ryža, fazuľa, restovaný tempeh, rajčina, cibuľa, avokádo, šalát, vegan kyslá smotana…</span></li>
+            <li><span class="d">Kimchi smažená ryža</span><span class="p num">12,30&nbsp;€</span><span class="s">300&nbsp;g · ryža, domáce kimchi, edamame, mrkva, cuketa, jarná cibuľka, restovaný tempeh · alergény 1, 6</span></li>
+            <li><span class="d">Loaded nugget fries</span><span class="p num">12,30&nbsp;€</span><span class="s">250&nbsp;g · hranolky, nekuracie kúsky, sriracha mayo, domáca nakladaná cibuľka, kyslá uhorka, šalát…</span></li>
+            <li class="h"><h3>Nápoje</h3></li>
+            <li><span class="d">Ľadové black sesame latte</span><span class="p num">4,30&nbsp;€</span><span class="s">0,4&nbsp;l</span></li>
+            <li><span class="d">Domáca limonáda</span><span class="p num">2,90 / 3,90&nbsp;€</span><span class="s">0,3&nbsp;l / 0,5&nbsp;l · podľa aktuálnej ponuky</span></li>
+            <li><span class="d">Domáci ľadový čaj</span><span class="p num">3,90&nbsp;€</span><span class="s">0,5&nbsp;l</span></li>
+          </ul>
+          <figure>
+            <div><img src="assets/pecivo.webp" width="640" height="853" loading="lazy" alt="Slimáky z lístkového cesta so zelenou plnkou a sušenými paradajkami na tmavom tanieri"></div>
+            <figcaption class="note">Z ich facebookovej stránky. Ceny podľa ponuky na Wolt/bistro.sk (28. 9. 2026).</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap lvl" id="poschodie" aria-labelledby="h-posch">
+      <div class="rt" aria-hidden="true"><svg viewBox="0 0 180 2400"><path class="tr" d="M74 0C80 100 62 200 70 300S80 420 74 470V2400"/><path class="br" d="M75 70C98 108 132 120 166 120"/><path class="br" d="M68 320C46 350 34 380 26 430"/><path class="tip" d="M74 540C98 568 108 600 106 640"/></svg></div>
+      <div class="body">
+        <p class="lbl">Čo o nich vieme</p>
+        <h2 id="h-posch">Poschodie s kozubom priamo na námestí</h2>
+        <ul class="tips">
+          <li><b>Kozub</b><span>Reštaurácia je na poschodí domu na Mierovom námestí 11 a má kozub — tak ju popisuje Google.</span></li>
+          <li><b>Aj s deťmi</b><span>Podľa Google majú k dispozícii vysoké stoličky pre deti.</span></li>
+          <li><b>So sebou</b><span>Na Facebooku uvádzajú vyzdvihnutie v prevádzke aj pred ňou; ponuka je aj na Wolte.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="deep">
+      <section class="wrap lvl" id="kontakt" aria-labelledby="h-kontakt">
+        <div class="rt" aria-hidden="true"><svg viewBox="0 0 180 2400"><path class="tr" d="M74 0C70 90 82 170 72 260S66 400 74 480"/><path class="br" d="M73 70C98 108 132 120 166 120"/><path class="tip" d="M74 480C62 530 46 560 32 600"/><path class="tip" d="M74 480C84 530 98 560 112 610"/><path class="tip" d="M74 480C75 540 72 580 76 640"/></svg></div>
+        <div class="body">
+          <p class="lbl">Kontakt</p>
+          <h2 id="h-kontakt">Mierové námestie 11, poschodie</h2>
+          <div class="cg">
+            <div>
+              <span class="lbl">Adresa</span>
+              <span class="big">Mierové námestie 11<br>911 01 Trenčín</span>
+              <p>Reštaurácia na poschodí.</p>
+              <div class="links">
+                <a href="https://www.google.com/maps/search/Roots+Vegan+Food+Tren%C4%8D%C3%ADn" rel="noopener" target="_blank">Google Mapy →</a>
+                <a href="https://www.facebook.com/rootsveganfoodtrencin" rel="noopener" target="_blank">Facebook →</a>
+                <a href="https://wolt.com/sk/svk/trencin/restaurant/roots-vegan-food" rel="noopener" target="_blank">Wolt →</a>
+              </div>
+            </div>
+            <div>
+              <span class="lbl">Telefón a e-mail</span>
+              <a class="big num" href="tel:+421918238718">0918 238 718</a><br>
+              <a class="big" href="mailto:rootsvegantrencin@gmail.com" style="font-size:20px;margin-top:8px">rootsvegantrencin@gmail.com</a>
+              <p>Týždenné menu zverejňujú na Facebooku.</p>
+            </div>
+            <div>
+              <span class="lbl">Otváracie hodiny · overiť</span>
+              <table class="hours num">
+                <tr data-day="1"><td>Pondelok</td><td>11:00–15:30</td></tr>
+                <tr data-day="2"><td>Utorok</td><td>11:00–15:30</td></tr>
+                <tr data-day="3"><td>Streda</td><td>11:00–15:30</td></tr>
+                <tr data-day="4"><td>Štvrtok</td><td>11:00–15:30</td></tr>
+                <tr data-day="5"><td>Piatok</td><td>11:00–15:30</td></tr>
+                <tr data-day="6"><td>Sobota</td><td>zatvorené</td></tr>
+                <tr data-day="0"><td>Nedeľa</td><td>zatvorené</td></tr>
+              </table>
+              <p>Podľa Google. Wolt uvádza Po–Pi 11:00–15:15 — overiť.</p>
+            </div>
+          </div>
+          <div class="rating">
+            <div><b class="num">4,7 / 5</b><span>Google · 131 hodnotení</span></div>
+            <div><b class="num">96 %</b><span>odporúča na Facebooku · 51 recenzií</span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>Neoficiálny návrh webu · webdavid.sk · 2026</b></span>
+    <span>Fotky a logo: facebooková stránka Roots Vegan Food · menu: Facebook a Wolt</span>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="Rýchle akcie">
+  <a href="tel:+421918238718">Zavolať</a>
+  <a href="https://www.google.com/maps/search/Roots+Vegan+Food+Tren%C4%8D%C3%ADn" rel="noopener" target="_blank">Mapa</a>
+</nav>
+
+<script>
+(function(){try{var d=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Bratislava",weekday:"short"}).format(new Date());var n={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[d];[].forEach.call(document.querySelectorAll('[data-day="'+n+'"]'),function(r){r.setAttribute("data-today","")})}catch(e){}})();
+</script>
